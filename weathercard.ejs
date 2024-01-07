@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .weather-card {
+      height: 200px;
+      width: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .weather-icon {
+      max-width: 80px;
+      height: auto;
+    }
+  </style>
+  <title>Weather Card</title>
+</head>
+<body>
+
+<div class="weather-card">
+    <h2>
+      City: <%= cityName %>
+    </h2>
+    <p>
+      Temperature: <%= temp%>° Celsius
+    </p>
+    <p id="weatherDescription"><%= desc%></p>
+
+    <img class="weather-icon" id="weatherIcon" src="https://openweathermap.org/img/w/<%= icon %>.png" alt="Windy Icon">
+
+  
+</div>
+
+</body>
+</html>
